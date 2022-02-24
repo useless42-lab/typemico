@@ -1,0 +1,53 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Config.WebName}}</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .article-item {
+            margin-bottom: 8px;
+        }
+
+        .article-item-title {
+            font-size: 22px;
+        }
+
+        .article-item-description {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .web-header {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 425px) {
+            .container {
+                width: 90%;
+            }
+
+            .web-header {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {{end}}

@@ -1,0 +1,9 @@
+{
+	"WebName": "Typemico",
+	"Theme": "simple",
+	"Port": "8080",
+	"SiteUrl": "https://www.test.com/",
+	"Description": "这是一个测试性描述",
+	"Keyword": "这是关键词",
+	"ArticleUrl": "https://test.com/test/test_.git"
+}

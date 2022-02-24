@@ -1,0 +1,24 @@
+{{template "header" .}}
+<!-- <div>{{.Config.ArticleConfig}}</div> -->
+<div class="container web-header">
+    <h1>{{.Config.WebName}}</h1>
+</div>
+<div class="container" style="margin-top:10px;">
+    {{range .Config.ArticleConfig}}
+    <div class="article-item">
+        <a href="{{.Path}}" class="article-item-title">
+            {{.Title}}
+        </a>
+        <div class="article-item-description">{{.Category}}</div>
+    </div>
+    {{end}}
+</div>
+<style>
+    a:link,
+    a:visited,
+    a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+{{template "footer" }}
